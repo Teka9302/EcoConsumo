@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.EcoConsumo" parent="Theme.Material3.DayNight.DarkActionBar">
+    <style name="Theme.EcoConsumo" parent="Theme.Material3.DayNight">
         <item name="colorPrimary">@color/verde_primario</item>
         <item name="colorPrimaryContainer">@color/verde_claro</item>
         <item name="colorOnPrimary">@color/blanco</item>
