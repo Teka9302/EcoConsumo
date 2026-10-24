@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EcoConsumo</string>
+    <string name="eslogan">Tu despensa bajo control</string>
+
+    <!-- Login / Registro -->
+    <string name="titulo_registro">Crear cuenta</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="hint_confirmar">Confirmar contraseña</string>
+    <string name="btn_ingresar">Iniciar sesión</string>
+    <string name="btn_registrarse">Registrarme</string>
+    <string name="link_registro">¿No tienes cuenta? Regístrate</string>
+    <string name="err_campo_obligatorio">Campo obligatorio</string>
+    <string name="err_correo_invalido">Ingresa un correo válido</string>
+    <string name="err_contrasena_debil">Mínimo 6 caracteres, con letras y números</string>
+    <string name="err_contrasenas_distintas">Las contraseñas no coinciden</string>
+    <string name="err_correo_registrado">Este correo ya está registrado</string>
+    <string name="err_credenciales">Correo o contraseña incorrectos</string>
+    <string name="msg_registro_ok">Cuenta creada. Ahora inicia sesión.</string>
+
+    <!-- Navegación -->
+    <string name="nav_despensa">Despensa</string>
+    <string name="nav_compras">Compras</string>
+    <string name="nav_cuenta">Cuenta</string>
+
+    <!-- Despensa -->
+    <string name="buscar_producto">Buscar producto…</string>
+    <string name="filtro_todos">Todos</string>
+    <string name="filtro_por_caducar">Por caducar</string>
+    <string name="filtro_en_stock">En stock</string>
+    <string name="todas_categorias">Todas las categorías</string>
+    <string name="despensa_vacia">Aún no registras productos.\nToca + para agregar el primero.</string>
+    <string name="sin_resultados_filtro">No hay productos con este filtro.</string>
+    <string name="producto_no_existe">No existe ningún producto llamado «%1$s».</string>
+    <string name="agregar_producto">Agregar producto</string>
+    <string name="stock_bajo">Stock bajo</string>
+    <string name="cantidad_unidades">%1$d unid.</string>
+
+    <!-- Formulario -->
+    <string name="titulo_nuevo_producto">Nuevo producto</string>
+    <string name="titulo_editar_producto">Editar producto</string>
+    <string name="hint_nombre_producto">Nombre del producto</string>
+    <string name="label_categoria">Categoría</string>
+    <string name="hint_cantidad">Cantidad</string>
+    <string name="hint_stock_minimo">Stock mínimo</string>
+    <string name="hint_fecha_compra">Fecha de compra</string>
+    <string name="hint_fecha_vencimiento">Fecha de vencimiento</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="nueva_categoria">Nueva categoría</string>
+    <string name="hint_nueva_categoria">Nombre de la categoría</string>
+    <string name="err_categoria_existe">Esa categoría ya existe</string>
+    <string name="err_cantidad">Ingresa un número válido (0 o más)</string>
+    <string name="err_fecha_compra_futura">La fecha de compra no puede ser futura</string>
+    <string name="err_vencimiento_antes_compra">Debe ser posterior o igual a la fecha de compra</string>
+    <string name="err_vencimiento_pasado">La fecha de vencimiento no puede ser anterior a hoy</string>
+    <string name="msg_producto_guardado">Producto guardado</string>
+    <string name="msg_producto_actualizado">Producto actualizado</string>
+
+    <!-- Estados de caducidad -->
+    <string name="estado_vigente">Vigente</string>
+    <string name="estado_por_caducar">Por caducar</string>
+    <string name="estado_vencido">Vencido</string>
+
+    <!-- Detalle -->
+    <string name="titulo_detalle">Detalle del producto</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_consumir">Consumir 1 unidad</string>
+    <string name="confirmar_eliminar_titulo">Eliminar producto</string>
+    <string name="confirmar_eliminar_msg">¿Seguro que deseas eliminar «%1$s»? Esta acción no se puede deshacer.</string>
+    <string name="msg_producto_eliminado">Producto eliminado</string>
+    <string name="msg_producto_no_encontrado">El producto ya no existe</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="label_cantidad">Cantidad: %1$d unid. (mínimo %2$d)</string>
+    <string name="label_fecha_compra">Comprado el %1$s</string>
+    <string name="label_fecha_vencimiento">Vence el %1$s</string>
+
+    <!-- Compras -->
+    <string name="compras_vacia">No hay productos por comprar.\nLos productos agotados o con stock bajo aparecerán aquí.</string>
+    <string name="btn_generar_lista">Actualizar lista</string>
+    <string name="btn_finalizar_compra">Guardar obtenidos</string>
+    <string name="msg_items_agregados">%1$d producto(s) agregados a la lista</string>
+    <string name="msg_lista_al_dia">La lista ya está al día</string>
+    <string name="msg_sin_obtenidos">Marca primero los artículos que ya obtuviste</string>
+    <string name="confirmar_finalizar_msg">Los artículos marcados se sumarán al stock de tu despensa y se quitarán de la lista.</string>
+    <string name="msg_compra_guardada">%1$d artículo(s) agregados a tu despensa</string>
+    <string name="cantidad_sugerida">Comprar: %1$d unid.</string>
+
+    <!-- Cuenta -->
+    <string name="total_productos">Productos registrados: %1$d</string>
+    <string name="productos_por_vencer">Por vencer en %1$d días: %2$d</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+    <string name="confirmar_cerrar_sesion">¿Deseas cerrar tu sesión en este dispositivo?</string>
+
+    <!-- Notificaciones -->
+    <string name="canal_vencimientos">Productos por vencer</string>
+    <string name="canal_vencimientos_desc">Avisos cuando un producto de tu despensa está próximo a vencer</string>
+    <string name="notif_titulo">%1$s está por vencer</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verde_primario">#2E7D32</color>
+    <color name="verde_oscuro">#1B5E20</color>
+    <color name="verde_claro">#A5D6A7</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="estado_vigente">#2E7D32</color>
+    <color name="estado_por_caducar">#EF6C00</color>
+    <color name="estado_vencido">#C62828</color>
+    <color name="ic_launcher_background">#2E7D32</color>
+</resources>

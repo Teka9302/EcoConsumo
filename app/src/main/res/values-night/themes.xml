@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EcoConsumo" parent="Theme.Material3.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/verde_claro</item>
+        <item name="colorPrimaryContainer">@color/verde_oscuro</item>
+        <item name="colorOnPrimary">@color/verde_oscuro</item>
+        <item name="colorSecondary">@color/verde_claro</item>
+        <item name="android:statusBarColor">@color/verde_oscuro</item>
+    </style>
+</resources>
