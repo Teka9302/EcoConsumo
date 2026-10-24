@@ -23,6 +23,7 @@
     <!-- Navegación -->
     <string name="nav_despensa">Despensa</string>
     <string name="nav_compras">Compras</string>
+    <string name="nav_estadisticas">Estadísticas</string>
     <string name="nav_cuenta">Cuenta</string>
 
     <!-- Despensa -->
@@ -31,12 +32,17 @@
     <string name="filtro_por_caducar">Por caducar</string>
     <string name="filtro_en_stock">En stock</string>
     <string name="todas_categorias">Todas las categorías</string>
-    <string name="despensa_vacia">Aún no registras productos.\nToca + para agregar el primero.</string>
+    <string name="despensa_vacia">Aún no hay productos en la despensa.\nToca + para agregar el primero.</string>
     <string name="sin_resultados_filtro">No hay productos con este filtro.</string>
     <string name="producto_no_existe">No existe ningún producto llamado «%1$s».</string>
     <string name="agregar_producto">Agregar producto</string>
     <string name="stock_bajo">Stock bajo</string>
     <string name="cantidad_unidades">%1$d unid.</string>
+
+    <!-- Estados de caducidad -->
+    <string name="estado_vigente">Vigente</string>
+    <string name="estado_por_caducar">Por caducar</string>
+    <string name="estado_vencido">Vencido</string>
 
     <!-- Formulario -->
     <string name="titulo_nuevo_producto">Nuevo producto</string>
@@ -58,42 +64,147 @@
     <string name="msg_producto_guardado">Producto guardado</string>
     <string name="msg_producto_actualizado">Producto actualizado</string>
 
-    <!-- Estados de caducidad -->
-    <string name="estado_vigente">Vigente</string>
-    <string name="estado_por_caducar">Por caducar</string>
-    <string name="estado_vencido">Vencido</string>
-
     <!-- Detalle -->
     <string name="titulo_detalle">Detalle del producto</string>
     <string name="btn_editar">Editar</string>
     <string name="btn_eliminar">Eliminar</string>
-    <string name="btn_consumir">Consumir 1 unidad</string>
+    <string name="btn_consumir">Consumir</string>
+    <string name="btn_desechar">Desechar</string>
+    <string name="label_unidades">Unidades</string>
+    <string name="label_motivo">Motivo</string>
+    <string name="label_cantidad">Cantidad: %1$d unid. (mínimo %2$d)</string>
+    <string name="label_fecha_compra">Comprado el %1$s</string>
+    <string name="label_fecha_vencimiento">Vence el %1$s</string>
+    <string name="label_registrado_por">Registrado por %1$s</string>
+    <string name="confirmar_eliminar_pregunta">¿Qué pasó con «%1$s»?</string>
+    <string name="eliminar_consumido">Se consumió todo</string>
+    <string name="eliminar_desechado">Se desechó</string>
+    <string name="eliminar_error">Lo registré por error (no contar)</string>
     <string name="confirmar_eliminar_titulo">Eliminar producto</string>
     <string name="confirmar_eliminar_msg">¿Seguro que deseas eliminar «%1$s»? Esta acción no se puede deshacer.</string>
     <string name="msg_producto_eliminado">Producto eliminado</string>
     <string name="msg_producto_no_encontrado">El producto ya no existe</string>
     <string name="cancelar">Cancelar</string>
     <string name="aceptar">Aceptar</string>
-    <string name="label_cantidad">Cantidad: %1$d unid. (mínimo %2$d)</string>
-    <string name="label_fecha_compra">Comprado el %1$s</string>
-    <string name="label_fecha_vencimiento">Vence el %1$s</string>
+
+    <!-- Motivos de desecho -->
+    <string name="motivo_vencido">Se venció</string>
+    <string name="motivo_mal_estado">En mal estado</string>
+    <string name="motivo_sobrante">Sobró / no se usó</string>
+    <string name="motivo_otro">Otro motivo</string>
 
     <!-- Compras -->
     <string name="compras_vacia">No hay productos por comprar.\nLos productos agotados o con stock bajo aparecerán aquí.</string>
+    <string name="ayuda_compras">Marca lo que ya compraste y toca «Guardar obtenidos». Mantén pulsado un artículo para quitarlo.</string>
     <string name="btn_generar_lista">Actualizar lista</string>
     <string name="btn_finalizar_compra">Guardar obtenidos</string>
+    <string name="agregar_articulo">Agregar artículo</string>
+    <string name="hint_articulo">Nombre del artículo</string>
+    <string name="quitar_de_lista">Quitar de la lista</string>
+    <string name="confirmar_quitar_item">¿Quitar «%1$s» de la lista de compras?</string>
     <string name="msg_items_agregados">%1$d producto(s) agregados a la lista</string>
     <string name="msg_lista_al_dia">La lista ya está al día</string>
     <string name="msg_sin_obtenidos">Marca primero los artículos que ya obtuviste</string>
-    <string name="confirmar_finalizar_msg">Los artículos marcados se sumarán al stock de tu despensa y se quitarán de la lista.</string>
-    <string name="msg_compra_guardada">%1$d artículo(s) agregados a tu despensa</string>
+    <string name="confirmar_finalizar_msg">Los artículos marcados se sumarán al stock de tu despensa, quedarán en el historial como compra y se quitarán de la lista.</string>
+    <string name="msg_compra_guardada">%1$d artículo(s) procesados</string>
     <string name="cantidad_sugerida">Comprar: %1$d unid.</string>
 
+    <!-- Estadísticas -->
+    <string name="periodo_mes">Este mes</string>
+    <string name="periodo_tres_meses">3 meses</string>
+    <string name="periodo_seis_meses">6 meses</string>
+    <string name="estadisticas_vacias">Aún no hay movimientos en este periodo.\nRegistra productos y usa «Consumir» o «Desechar» en su detalle para ver tus estadísticas.</string>
+    <string name="kpi_comprado">Unidades compradas</string>
+    <string name="kpi_consumido">Consumido</string>
+    <string name="kpi_desechado">Desechado</string>
+    <string name="kpi_aprovechado">Aprovechamiento</string>
+    <string name="titulo_grafico_mensual">Consumo vs desperdicio por mes</string>
+    <string name="titulo_desecho_categoria">Desperdicio por categoría</string>
+    <string name="titulo_motivos">Motivos de desecho</string>
+    <string name="titulo_mas_desechados">Lo que más se desecha</string>
+    <string name="sin_desechos_periodo">Sin desechos en este periodo 🎉</string>
+    <string name="btn_ver_historial">Ver historial completo</string>
+    <string name="consejo_sin_desperdicio">¡Excelente! No has desperdiciado alimentos en este periodo.</string>
+    <string name="consejo_vencido">La mayor parte de tu desperdicio es por vencimiento. Prueba aumentar los días de aviso en Ajustes y consume primero lo que vence antes.</string>
+    <string name="consejo_sobrante">Mucho de lo que desechas sobró. Revisa las cantidades que compras y usa la lista de compras.</string>
+    <string name="consejo_mal_estado">Varios productos se echaron a perder. Revisa cómo los almacenas (refrigeración, envases cerrados).</string>
+    <string name="consejo_general">Registra el motivo de cada desecho para recibir recomendaciones más precisas.</string>
+
+    <!-- Historial -->
+    <string name="titulo_historial">Historial</string>
+    <string name="filtro_consumos">Consumos</string>
+    <string name="filtro_desechos">Desechos</string>
+    <string name="filtro_compras">Compras</string>
+    <string name="historial_vacio">No hay movimientos registrados.</string>
+    <string name="tipo_compra">Compra</string>
+    <string name="tipo_consumo">Consumo</string>
+    <string name="tipo_desecho">Desecho</string>
+    <string name="movimiento_tipo_cantidad">%1$s · %2$d unid.</string>
+
     <!-- Cuenta -->
-    <string name="total_productos">Productos registrados: %1$d</string>
+    <string name="total_productos">Productos en la despensa: %1$d</string>
     <string name="productos_por_vencer">Por vencer en %1$d días: %2$d</string>
     <string name="btn_cerrar_sesion">Cerrar sesión</string>
     <string name="confirmar_cerrar_sesion">¿Deseas cerrar tu sesión en este dispositivo?</string>
+    <string name="rol_admin">Administrador</string>
+    <string name="rol_miembro">Miembro</string>
+    <plurals name="cantidad_miembros">
+        <item quantity="one">%1$d miembro</item>
+        <item quantity="other">%1$d miembros</item>
+    </plurals>
+
+    <!-- Hogar compartido -->
+    <string name="titulo_hogar">Mi hogar</string>
+    <string name="codigo_invitacion">Código de invitación</string>
+    <string name="ayuda_codigo">Otro miembro de la familia puede crear su cuenta en este celular y unirse con este código para compartir la despensa.</string>
+    <string name="copiar_codigo">Copiar código</string>
+    <string name="msg_codigo_copiado">Código copiado</string>
+    <string name="regenerar_codigo">Generar nuevo código</string>
+    <string name="confirmar_regenerar_codigo">El código actual dejará de funcionar. ¿Generar uno nuevo?</string>
+    <string name="renombrar_hogar">Cambiar nombre del hogar</string>
+    <string name="hint_nombre_hogar">Nombre del hogar</string>
+    <string name="titulo_miembros">Miembros</string>
+    <string name="miembro_yo">%1$s (tú)</string>
+    <string name="quitar_miembro">Quitar miembro</string>
+    <string name="confirmar_quitar_miembro">¿Quitar a %1$s del hogar? Pasará a tener su propia despensa vacía.</string>
+    <string name="msg_miembro_quitado">Miembro quitado del hogar</string>
+    <string name="unirse_hogar">Unirme a otro hogar</string>
+    <string name="hint_codigo">Código de 6 caracteres</string>
+    <string name="msg_unido_hogar">Ahora compartes la despensa de este hogar</string>
+    <string name="err_codigo_invalido">El código no corresponde a ningún hogar</string>
+    <string name="err_mismo_hogar">Ya perteneces a este hogar</string>
+    <string name="salir_hogar">Salir del hogar</string>
+    <string name="confirmar_salir_hogar">Dejarás de ver la despensa compartida y empezarás con una despensa propia vacía.</string>
+    <string name="msg_salio_hogar">Saliste del hogar compartido</string>
+    <string name="err_unico_miembro">Eres el único miembro de este hogar</string>
+
+    <!-- Perfil -->
+    <string name="titulo_perfil">Editar perfil</string>
+    <string name="seccion_datos">Datos personales</string>
+    <string name="seccion_contrasena">Cambiar contraseña</string>
+    <string name="hint_contrasena_actual">Contraseña actual</string>
+    <string name="hint_contrasena_nueva">Nueva contraseña</string>
+    <string name="btn_cambiar_contrasena">Cambiar contraseña</string>
+    <string name="msg_perfil_actualizado">Perfil actualizado</string>
+    <string name="msg_contrasena_cambiada">Contraseña actualizada</string>
+    <string name="err_contrasena_actual">La contraseña actual no es correcta</string>
+
+    <!-- Ajustes -->
+    <string name="titulo_ajustes">Ajustes</string>
+    <string name="pref_categoria_notificaciones">Notificaciones</string>
+    <string name="pref_notificaciones">Avisos de vencimiento</string>
+    <string name="pref_notificaciones_resumen">Recibir una notificación diaria con los productos por vencer</string>
+    <string name="pref_dias_aviso">Considerar «por caducar»</string>
+    <string name="pref_hora_aviso">Hora del aviso diario</string>
+    <string name="pref_categoria_apariencia">Apariencia</string>
+    <string name="pref_tema">Tema</string>
+    <string name="pref_categoria_datos">Datos</string>
+    <string name="pref_exportar_inventario">Exportar inventario (CSV)</string>
+    <string name="pref_exportar_inventario_resumen">Lista de productos para abrir en Excel o Google Sheets</string>
+    <string name="pref_exportar_historial">Exportar historial (CSV)</string>
+    <string name="pref_exportar_historial_resumen">Compras, consumos y desechos registrados</string>
+    <string name="msg_exportado">Archivo exportado</string>
+    <string name="err_exportar">No se pudo exportar el archivo</string>
 
     <!-- Notificaciones -->
     <string name="canal_vencimientos">Productos por vencer</string>

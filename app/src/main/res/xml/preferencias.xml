@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/pref_categoria_notificaciones">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="notificaciones_activas"
+            app:summary="@string/pref_notificaciones_resumen"
+            app:title="@string/pref_notificaciones" />
+
+        <ListPreference
+            app:defaultValue="3"
+            app:entries="@array/dias_aviso_textos"
+            app:entryValues="@array/dias_aviso_valores"
+            app:key="dias_aviso"
+            app:title="@string/pref_dias_aviso"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="9"
+            app:dependency="notificaciones_activas"
+            app:entries="@array/hora_aviso_textos"
+            app:entryValues="@array/hora_aviso_valores"
+            app:key="hora_aviso"
+            app:title="@string/pref_hora_aviso"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_categoria_apariencia">
+        <ListPreference
+            app:defaultValue="sistema"
+            app:entries="@array/tema_textos"
+            app:entryValues="@array/tema_valores"
+            app:key="tema"
+            app:title="@string/pref_tema"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_categoria_datos">
+        <Preference
+            app:key="exportar_inventario"
+            app:summary="@string/pref_exportar_inventario_resumen"
+            app:title="@string/pref_exportar_inventario" />
+
+        <Preference
+            app:key="exportar_historial"
+            app:summary="@string/pref_exportar_historial_resumen"
+            app:title="@string/pref_exportar_historial" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mismo orden que EstadoUi.MOTIVOS -->
+    <string-array name="motivos_desecho">
+        <item>@string/motivo_vencido</item>
+        <item>@string/motivo_mal_estado</item>
+        <item>@string/motivo_sobrante</item>
+        <item>@string/motivo_otro</item>
+    </string-array>
+
+    <string-array name="dias_aviso_textos">
+        <item>1 día antes</item>
+        <item>2 días antes</item>
+        <item>3 días antes</item>
+        <item>5 días antes</item>
+        <item>7 días antes</item>
+    </string-array>
+    <string-array name="dias_aviso_valores" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="hora_aviso_textos">
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>12:00</item>
+        <item>18:00</item>
+        <item>20:00</item>
+    </string-array>
+    <string-array name="hora_aviso_valores" translatable="false">
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>12</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="tema_textos">
+        <item>Según el sistema</item>
+        <item>Claro</item>
+        <item>Oscuro</item>
+    </string-array>
+    <string-array name="tema_valores" translatable="false">
+        <item>sistema</item>
+        <item>claro</item>
+        <item>oscuro</item>
+    </string-array>
+</resources>

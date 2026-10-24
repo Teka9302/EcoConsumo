@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_compras"
         android:title="@string/nav_compras" />
     <item
+        android:id="@+id/nav_estadisticas"
+        android:icon="@drawable/ic_estadisticas"
+        android:title="@string/nav_estadisticas" />
+    <item
         android:id="@+id/nav_cuenta"
         android:icon="@drawable/ic_cuenta"
         android:title="@string/nav_cuenta" />
